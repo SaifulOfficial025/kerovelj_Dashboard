@@ -7,6 +7,7 @@ import { ChevronsLeft, ChevronsRight } from "lucide-react";
 import { MdOutlineBarChart } from "react-icons/md";
 import wencong_logo from '../../../public/huntrerboom_logo.png'
 // import AgentSalesReport from "..Dashboard/AgentSalesReport";
+import { CiSettings } from "react-icons/ci";
 
 
 export default function Dashboard() {
@@ -56,6 +57,53 @@ export default function Dashboard() {
               },
           ]
         },
+        {
+          name: "Settings",
+          icon: <CiSettings />,
+          path: "/settings",
+          children:
+          [
+            { 
+              name: "Users (Office Use)"  ,
+              path: "/settings/users/",
+            },
+            { 
+              name: "System Settings"  ,
+              path: "/settings/system_settings/"
+            },
+          ]
+        },
+        {
+          name: "Master Data",
+          icon: "",
+          path: "master_data",
+          children: [
+            {
+              name: "Sales Agent",
+              path: "/master_data/sales_agent",
+            },
+            {
+              name: "Sales Agent Group",
+              path: "/master_data/sales_agent_group",
+            },
+            {
+              name: "Product",
+              path: "/master_data/product",
+            },
+            {
+              name: "Pricing",
+              path: "/master_data/pricing",
+            },
+            {
+              name: "Promotion",
+              path: "/master_data/promotion",
+            },
+            // {
+            //   name: "Delivery Fee",
+            //   path: "/master_data/delivery_fee",
+            // }
+          ]
+        }
       ],
     },
   ];
