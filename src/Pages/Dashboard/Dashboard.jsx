@@ -8,6 +8,7 @@ import { MdOutlineBarChart } from "react-icons/md";
 import wencong_logo from '../../../public/huntrerboom_logo.png'
 // import AgentSalesReport from "..Dashboard/AgentSalesReport";
 import { CiSettings } from "react-icons/ci";
+import { BsDatabaseCheck } from "react-icons/bs";
 
 
 export default function Dashboard() {
@@ -75,7 +76,7 @@ export default function Dashboard() {
         },
         {
           name: "Master Data",
-          icon: "",
+          icon: <BsDatabaseCheck />,
           path: "master_data",
           children: [
             {
