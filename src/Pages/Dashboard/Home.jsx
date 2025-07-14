@@ -8,7 +8,6 @@
 //     { id: 6, title: "Return", amount: "12" }
 //   ];
 
-import Graph from "./LinkedItems/Graph";
 
 //   const salesByCompany = [
 //     { id: 1, name: "ABC COMPANY", items: 1220, total: "RM123,450.00" },
